@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <title>WebApp time</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body onload="NowDateTime()">
+    <div class="container">
+      <div class="center_div">
+        
+        <div class="text">
+            <label>Время отправки</label>
+        </div>
+
+        <div class="inputsPC" id="inputsDiv">
+            <input type="date" id="dateInput">
+            <input type="time" id="timeInput"/>
+        </div>
+        
+        <div class="btn">
+          <button id="confirm_btn" onclick="checkInputs()">Запланировать</button>
+        </div>
+
+      </div>
+    </div>
+    
+    <script src="functions.js"></script>
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+  </body>
+</html>
